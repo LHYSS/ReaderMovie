@@ -1,0 +1,47 @@
+<!--pages/posts/post.wxml-->
+<view>
+  <view>
+    <swiper indicator-dots='true' autoplay='true' interval='3000'>
+      <swiper-item><image src='/images/1.jpg'></image></swiper-item>
+      <swiper-item><image src='/images/2.jpg'></image></swiper-item>
+      <swiper-item><image src='/images/3.jpg'></image></swiper-item>
+    </swiper>
+  </view>
+
+  <view class='post-container'>
+    <view class='post-author-date'>
+      <image src='{{author_img}}' class='post-author'></image>
+      <text class='post-date'>{{date}}</text>
+    </view>
+    <text class='post-title'>{{title}}</text>
+    <image class='post-image' src='{{post_img}}'></image>
+    <text class='post-content'>{{content}}</text>
+    <view class='post-like'>
+      <image class='post-like-image' src="{{collect_img}}"></image>
+      <text class='post-like-font'>{{collect_num}}</text>
+      <image class='post-like-image' src="{{view_img}}"></image>
+      <text class='post-like-font'>{{view_num}}</text>
+    </view>
+  </view>
+
+  <view class='post-container'>
+    <view class='post-author-date'>
+      <image src='/images/author/1.jpg' class='post-author'></image>
+      <text class='post-date'>{{date}}</text>
+    </view>
+    <text class='post-title'>{{title}}</text>
+    <image class='post-image' src='/images/post-image/1.jpg'></image>
+    <text class='post-content'>等到秋风起，秋叶落成堆，能陪你一起枯萎也无悔。</text>
+    <view class='post-like'>
+      <image class='post-like-image' src='/images/icon/love.png'></image>
+      <text class='post-like-font'>35</text>
+      <image class='post-like-image' src='/images/icon/see.png'></image>
+      <text class='post-like-font'>65</text>
+    </view>
+  </view>
+
+</view>
+
+
+
+
