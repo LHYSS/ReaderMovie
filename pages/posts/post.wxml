@@ -8,38 +8,23 @@
     </swiper>
   </view>
 
+<block wx:for="{{posts_key}}" wx:for-item="item">
   <view class='post-container'>
     <view class='post-author-date'>
-      <image src='{{author_img}}' class='post-author'></image>
-      <text class='post-date'>{{date}}</text>
+      <image src='{{item.img.author_img}}' class='post-author'></image>
+      <text class='post-date'>{{item.date}}</text>
     </view>
-    <text class='post-title'>{{title}}</text>
-    <image class='post-image' src='{{post_img}}'></image>
-    <text class='post-content'>{{content}}</text>
+    <text class='post-title'>{{item.title}}</text>
+    <image class='post-image' src='{{item.img.post_img}}'></image>
+    <text class='post-content'>{{item.content}}</text>
     <view class='post-like'>
-      <image class='post-like-image' src="{{collect_img}}"></image>
-      <text class='post-like-font'>{{collect_num}}</text>
-      <image class='post-like-image' src="{{view_img}}"></image>
-      <text class='post-like-font'>{{view_num}}</text>
+      <image class='post-like-image' src="{{img.collect_img}}"></image>
+      <text class='post-like-font'>{{item.collect_num}}</text>
+      <image class='post-like-image' src="{{img.view_img}}"></image>
+      <text class='post-like-font'>{{item.view_num}}</text>
     </view>
   </view>
-
-  <view class='post-container'>
-    <view class='post-author-date'>
-      <image src='/images/author/1.jpg' class='post-author'></image>
-      <text class='post-date'>{{date}}</text>
-    </view>
-    <text class='post-title'>{{title}}</text>
-    <image class='post-image' src='/images/post-image/1.jpg'></image>
-    <text class='post-content'>等到秋风起，秋叶落成堆，能陪你一起枯萎也无悔。</text>
-    <view class='post-like'>
-      <image class='post-like-image' src='/images/icon/love.png'></image>
-      <text class='post-like-font'>35</text>
-      <image class='post-like-image' src='/images/icon/see.png'></image>
-      <text class='post-like-font'>65</text>
-    </view>
-  </view>
-
+</block>
 </view>
 
 
