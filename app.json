@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/welcome/welcome"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "black",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "ReaderMovie",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
+  }
+}

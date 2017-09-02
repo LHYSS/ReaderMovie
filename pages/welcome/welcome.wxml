@@ -1,0 +1,8 @@
+<!--pages/welcome/welcome.wxml-->
+<view class='container'>
+  <image class='user-avatar' src='/images/me.jpg'></image>
+  <text class='user-name'>{{page}}刘洪燕</text>
+  <view class='moto-container'>
+    <text class='moto'>{{page}}开启小程序之旅</text>
+  </view>
+</view>
